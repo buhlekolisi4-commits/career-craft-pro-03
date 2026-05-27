@@ -59,14 +59,12 @@ function ChatBody({ threadId, initialMessages, onTitleChange }: {
   const transport = new DefaultChatTransport({
     api: "/api/chat",
     body: { threadId },
-    prepareSendMessagesRequest: async ({ messages, body }) => {
+    prepareSendMessagesRequest: async ({ messages }) => {
       const { data } = await supabase.auth.getSession();
       const token = data.session?.access_token;
-      return {
-        body: { messages, threadId },
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-        ...body,
-      };
+      const headers: Record<string, string> = {};
+      if (token) headers.Authorization = `Bearer ${token}`;
+      return { body: { messages, threadId }, headers };
     },
   });
 
