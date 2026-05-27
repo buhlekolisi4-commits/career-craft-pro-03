@@ -49,10 +49,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Cabinet — AI Job Application Atelier" },
-      { name: "description", content: "An AI-powered assistant for tailored CVs, cover letters, application emails, scheduling and company research." },
-      { property: "og:title", content: "Cabinet — AI Job Application Atelier" },
-      { property: "og:description", content: "Craft polished, tailored job applications with an editorial AI assistant." },
+      { title: "Belle Careers — Where Talent Meets Opportunity" },
+      { name: "description", content: "AI-powered job application assistant: tailor CVs, draft cover letters and emails, plan your search and research companies." },
+      { property: "og:title", content: "Belle Careers — Where Talent Meets Opportunity" },
+      { property: "og:description", content: "Craft polished, tailored job applications with an elegant AI assistant." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

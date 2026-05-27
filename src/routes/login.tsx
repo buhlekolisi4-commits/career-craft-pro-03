@@ -9,7 +9,7 @@ import { Logo } from "@/components/logo";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/login")({
-  head: () => ({ meta: [{ title: "Sign in — Cabinet" }] }),
+  head: () => ({ meta: [{ title: "Sign in — Belle Careers" }] }),
   component: Login,
 });
 
@@ -61,10 +61,10 @@ function Login() {
     <div className="relative min-h-screen items-center justify-center bg-background flex px-4">
       <div className="relative z-10 w-full max-w-md">
         <div className="mb-8 flex flex-col items-center">
-          <Logo className="h-12 w-12" />
+          <Logo className="h-14 w-auto" />
           <div className="gold-rule my-4 w-16" />
           <h1 className="font-display text-3xl">{mode === "signin" ? "Welcome back" : "Open your folio"}</h1>
-          <p className="mt-1 text-sm text-muted-foreground">to Cabinet — your job application atelier</p>
+          <p className="mt-1 text-sm text-muted-foreground">to Belle Careers — where talent meets opportunity</p>
         </div>
 
         <div className="rounded-md border border-border bg-card p-8 shadow-sm">

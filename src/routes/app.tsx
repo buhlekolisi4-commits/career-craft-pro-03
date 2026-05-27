@@ -65,9 +65,9 @@ function Sidebar() {
   return (
     <aside className="flex w-72 shrink-0 flex-col border-r border-border bg-sidebar text-sidebar-foreground">
       <div className="flex items-center gap-3 px-5 py-5">
-        <Logo className="h-8 w-8" />
+        <Logo className="h-10 w-auto" />
         <div>
-          <div className="font-display text-lg leading-none">Cabinet</div>
+          <div className="font-display text-lg leading-none">Belle Careers</div>
           <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Atelier</div>
         </div>
       </div>

@@ -93,8 +93,8 @@ function ChatBody({ threadId, initialMessages, onTitleChange }: {
   return (
     <div className="flex h-screen flex-col">
       <header className="flex items-center gap-3 border-b border-border px-6 py-4">
-        <Logo className="h-6 w-6" />
-        <span className="font-display text-lg">Cabinet</span>
+        <Logo className="h-7 w-auto" />
+        <span className="font-display text-lg">Belle Careers</span>
         <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">— Atelier</span>
       </header>
 
@@ -102,7 +102,7 @@ function ChatBody({ threadId, initialMessages, onTitleChange }: {
         <div className="mx-auto max-w-3xl px-6 py-10">
           {empty ? (
             <div className="py-12 text-center">
-              <div className="mx-auto inline-flex"><Logo className="h-14 w-14" /></div>
+              <div className="mx-auto inline-flex"><Logo className="h-20 w-auto" /></div>
               <div className="gold-rule mx-auto my-6 w-24" />
               <h2 className="font-display text-4xl">How may I help today?</h2>
               <p className="mt-3 text-sm text-muted-foreground">
