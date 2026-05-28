@@ -63,8 +63,8 @@ function Login() {
         <div className="mb-8 flex flex-col items-center">
           <Logo className="h-14 w-auto" />
           <div className="gold-rule my-4 w-16" />
-          <h1 className="font-display text-3xl">{mode === "signin" ? "Welcome back" : "Open your folio"}</h1>
-          <p className="mt-1 text-sm text-muted-foreground">to Belle Careers — where talent meets opportunity</p>
+          <h1 className="font-display text-3xl">{mode === "signin" ? "Welcome back" : "Create your account"}</h1>
+          <p className="mt-1 text-sm text-muted-foreground">to Belle Careers — easy help with your job search</p>
         </div>
 
         <div className="rounded-md border border-border bg-card p-8 shadow-sm">
