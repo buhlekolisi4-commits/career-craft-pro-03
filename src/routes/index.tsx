@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Belle Careers — Where Talent Meets Opportunity" },
-      { name: "description", content: "AI-powered job application assistant — tailored CVs, cover letters, emails, planning and research." },
+      { title: "Belle Careers — Help With Job Applications" },
+      { name: "description", content: "An easy AI helper for your CV, cover letters, emails, planning, and company research." },
     ],
   }),
   component: Landing,
@@ -38,29 +38,29 @@ function Landing() {
       </header>
 
       <main className="relative z-10 mx-auto max-w-3xl px-8 py-20 text-center">
-        <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Where talent meets opportunity</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Help with your job search</p>
         <div className="gold-rule mx-auto my-6 w-24" />
         <h1 className="font-display text-6xl leading-[1.05] md:text-7xl">
-          Apply with <em>Belle</em> — your AI career atelier.
+          Apply for jobs with <em>Belle</em> — your AI helper.
         </h1>
         <p className="mx-auto mt-8 max-w-xl text-base text-muted-foreground">
-          Belle Careers drafts tailored cover letters, sharpens your CV against any job description,
-          composes the perfect application email, and quietly keeps your search in order.
+          Belle writes your cover letters, improves your CV for any job, drafts the right email,
+          and helps you plan your week. Simple tools for everyone, anywhere.
         </p>
         <div className="mt-10 flex items-center justify-center gap-3">
           <Link to="/login">
-            <Button size="lg" className="px-8">Begin your folio</Button>
+            <Button size="lg" className="px-8">Get started</Button>
           </Link>
         </div>
 
         <div className="mt-24 grid gap-8 text-left md:grid-cols-2">
           {[
-            ["Smart Email Generator", "Application, follow-up, networking — phrased with the right tone for every recipient."],
-            ["CV Tailoring Tool", "ATS-friendly rewrites that mirror the role's language and surface your strongest work."],
-            ["Cover Letter Generator", "Unique, motivated letters that align your story with each company's voice."],
-            ["AI Task Planner", "A weekly schedule of deadlines so nothing in your search slips through."],
-            ["AI Research Assistant", "A quiet brief on every company before you interview — mission, news, culture."],
-            ["Your Folio", "Every draft and conversation kept in one elegant place across devices."],
+            ["Write Job Emails", "Get a clear, polite email for any job — to apply, follow up, or say thank you."],
+            ["Improve Your CV", "Make your CV match the job. Easy to read for people and for hiring software."],
+            ["Make Cover Letters", "A friendly letter that fits the job and shows why you are a good match."],
+            ["Plan Your Week", "A simple weekly plan so you never miss a deadline."],
+            ["Research Companies", "A short, easy report about any company before your interview."],
+            ["All In One Place", "All your chats and drafts saved on every device you use."],
           ].map(([title, body]) => (
             <div key={title} className="border-l border-border pl-4">
               <h3 className="font-display text-2xl">{title}</h3>

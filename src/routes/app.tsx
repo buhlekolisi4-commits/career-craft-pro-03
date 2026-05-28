@@ -68,7 +68,7 @@ function Sidebar() {
         <Logo className="h-10 w-auto" />
         <div>
           <div className="font-display text-lg leading-none">Belle Careers</div>
-          <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Atelier</div>
+          <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Your helper</div>
         </div>
       </div>
       <div className="gold-rule mx-5" />
@@ -79,14 +79,14 @@ function Sidebar() {
           className="w-full justify-start gap-2"
           variant="default"
         >
-          <Plus className="h-4 w-4" /> New conversation
+          <Plus className="h-4 w-4" /> New chat
         </Button>
       </div>
 
-      <div className="px-3 pb-2 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Folio</div>
+      <div className="px-3 pb-2 text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Your chats</div>
       <nav className="flex-1 overflow-y-auto px-2 pb-4">
         {threads.data?.length === 0 && (
-          <p className="px-3 py-6 text-xs italic text-muted-foreground">No conversations yet.</p>
+          <p className="px-3 py-6 text-xs italic text-muted-foreground">No chats yet.</p>
         )}
         <ul className="space-y-1">
           {threads.data?.map((t) => {

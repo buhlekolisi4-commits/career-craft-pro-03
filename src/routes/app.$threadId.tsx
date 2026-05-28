@@ -16,11 +16,11 @@ export const Route = createFileRoute("/app/$threadId")({
 });
 
 const SUGGESTIONS = [
-  { icon: Mail, label: "Draft application email", prompt: "Help me draft a professional application email." },
-  { icon: FileText, label: "Tailor my CV", prompt: "Tailor my CV for a job description I'll paste." },
-  { icon: PenTool, label: "Write a cover letter", prompt: "Write a personalized cover letter for a role." },
-  { icon: Calendar, label: "Plan my week", prompt: "Create a weekly job application schedule." },
-  { icon: Search, label: "Research a company", prompt: "Research a company before my interview." },
+  { icon: Mail, label: "Write a job email", prompt: "Help me write a clear and polite job application email." },
+  { icon: FileText, label: "Improve my CV", prompt: "Help me improve my CV for a job. I will paste the job details." },
+  { icon: PenTool, label: "Write a cover letter", prompt: "Write a simple cover letter for a job I want to apply to." },
+  { icon: Calendar, label: "Plan my week", prompt: "Make a simple weekly plan for my job search." },
+  { icon: Search, label: "Learn about a company", prompt: "Tell me about a company before my interview." },
 ];
 
 function ChatPage() {
@@ -95,7 +95,7 @@ function ChatBody({ threadId, initialMessages, onTitleChange }: {
       <header className="flex items-center gap-3 border-b border-border px-6 py-4">
         <Logo className="h-7 w-auto" />
         <span className="font-display text-lg">Belle Careers</span>
-        <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">— Atelier</span>
+        <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">— Helper</span>
       </header>
 
       <div ref={scrollRef} className="relative z-10 flex-1 overflow-y-auto">
@@ -104,9 +104,9 @@ function ChatBody({ threadId, initialMessages, onTitleChange }: {
             <div className="py-12 text-center">
               <div className="mx-auto inline-flex"><Logo className="h-20 w-auto" /></div>
               <div className="gold-rule mx-auto my-6 w-24" />
-              <h2 className="font-display text-4xl">How may I help today?</h2>
+              <h2 className="font-display text-4xl">How can I help you today?</h2>
               <p className="mt-3 text-sm text-muted-foreground">
-                Tailor a CV, draft an email, write a cover letter — or plan your week.
+                Improve your CV, write an email or cover letter, or plan your week. Pick one below.
               </p>
               <div className="mt-10 grid gap-3 sm:grid-cols-2">
                 {SUGGESTIONS.map((s) => (
@@ -130,7 +130,7 @@ function ChatBody({ threadId, initialMessages, onTitleChange }: {
                 <MessageView key={m.id} message={m} />
               ))}
               {isLoading && messages[messages.length - 1]?.role === "user" && (
-                <div className="text-sm italic text-muted-foreground">Composing…</div>
+                <div className="text-sm italic text-muted-foreground">Writing…</div>
               )}
             </div>
           )}
@@ -149,7 +149,7 @@ function ChatBody({ threadId, initialMessages, onTitleChange }: {
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); submit(input); }
             }}
-            placeholder="Write to Cabinet…"
+            placeholder="Type your message to Belle…"
             rows={1}
             className="min-h-[44px] max-h-40 flex-1 resize-none rounded-md border border-border bg-card px-4 py-3 text-sm outline-none focus:border-[var(--gold)]"
           />
