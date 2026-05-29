@@ -16,11 +16,11 @@ export const Route = createFileRoute("/app/$threadId")({
 });
 
 const SUGGESTIONS = [
-  { icon: Mail, label: "Write a job email", prompt: "Help me write a clear and polite job application email." },
-  { icon: FileText, label: "Improve my CV", prompt: "Help me improve my CV for a job. I will paste the job details." },
-  { icon: PenTool, label: "Write a cover letter", prompt: "Write a simple cover letter for a job I want to apply to." },
-  { icon: Calendar, label: "Plan my week", prompt: "Make a simple weekly plan for my job search." },
-  { icon: Search, label: "Learn about a company", prompt: "Tell me about a company before my interview." },
+  { icon: Mail, label: "Compose an outreach email", prompt: "Draft a refined outreach email for a job application." },
+  { icon: FileText, label: "Tailor my CV", prompt: "Help me tailor my CV to a specific role. I'll paste the job description." },
+  { icon: PenTool, label: "Write a cover letter", prompt: "Write a bespoke cover letter for a role I'm applying to." },
+  { icon: Calendar, label: "Plan my week", prompt: "Create a weekly application schedule for my job search." },
+  { icon: Search, label: "Research a company", prompt: "Prepare a concise briefing on a company before my interview." },
 ];
 
 function ChatPage() {
