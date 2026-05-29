@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Belle Careers — Help With Job Applications" },
-      { name: "description", content: "An easy AI helper for your CV, cover letters, emails, planning, and company research." },
+      { title: "Belle Careers — AI Job Application Atelier" },
+      { name: "description", content: "An elegant AI atelier for tailored CVs, cover letters, outreach emails, planning, and company research." },
     ],
   }),
   component: Landing,
@@ -38,29 +38,29 @@ function Landing() {
       </header>
 
       <main className="relative z-10 mx-auto max-w-3xl px-8 py-20 text-center">
-        <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Help with your job search</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">The art of the application</p>
         <div className="gold-rule mx-auto my-6 w-24" />
         <h1 className="font-display text-6xl leading-[1.05] md:text-7xl">
-          Apply for jobs with <em>Belle</em> — your AI helper.
+          Apply with <em>Belle</em> — your AI atelier for the job search.
         </h1>
         <p className="mx-auto mt-8 max-w-xl text-base text-muted-foreground">
-          Belle writes your cover letters, improves your CV for any job, drafts the right email,
-          and helps you plan your week. Simple tools for everyone, anywhere.
+          Belle composes cover letters, tailors your CV to any role, drafts the perfect email,
+          and orchestrates your week. Elegant tools for a confident career.
         </p>
         <div className="mt-10 flex items-center justify-center gap-3">
           <Link to="/login">
-            <Button size="lg" className="px-8">Get started</Button>
+            <Button size="lg" className="px-8">Begin</Button>
           </Link>
         </div>
 
         <div className="mt-24 grid gap-8 text-left md:grid-cols-2">
           {[
-            ["Write Job Emails", "Get a clear, polite email for any job — to apply, follow up, or say thank you."],
-            ["Improve Your CV", "Make your CV match the job. Easy to read for people and for hiring software."],
-            ["Make Cover Letters", "A friendly letter that fits the job and shows why you are a good match."],
-            ["Plan Your Week", "A simple weekly plan so you never miss a deadline."],
-            ["Research Companies", "A short, easy report about any company before your interview."],
-            ["All In One Place", "All your chats and drafts saved on every device you use."],
+            ["Smart Email Generator", "Polished outreach, follow-ups, and thank-you notes — drafted in your voice."],
+            ["CV Tailoring", "Reshape your CV to mirror any role, optimised for both recruiters and ATS."],
+            ["Cover Letter Atelier", "Bespoke letters that read like you wrote them on your best day."],
+            ["AI Task Planner", "A weekly application schedule, kept on tempo with quiet discipline."],
+            ["Research Assistant", "Concise briefs on any company, prepared before your interview."],
+            ["One Cabinet", "Every conversation and draft, kept across devices."],
           ].map(([title, body]) => (
             <div key={title} className="border-l border-border pl-4">
               <h3 className="font-display text-2xl">{title}</h3>
